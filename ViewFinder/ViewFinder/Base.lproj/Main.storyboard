@@ -13,7 +13,7 @@
         <!--View Finder-->
         <scene sceneID="bTY-rA-y4Q">
             <objects>
-                <tableViewController id="dyG-uR-kSl" sceneMemberID="viewController">
+                <tableViewController id="dyG-uR-kSl" customClass="PhotoTableTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nYE-Pd-B2O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,19 +49,19 @@
         <!--View Controller-->
         <scene sceneID="D9O-nP-9R0">
             <objects>
-                <viewController id="I41-aK-jp6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="laO-YX-7jS">
+                <viewController id="I41-aK-jp6" customClass="ViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="laO-YX-7jS" customClass="ADd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMK-gw-p0f">
-                                <rect key="frame" x="0.0" y="44" width="0.0" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Add new photo" id="C3O-r9-kCa"/>
                                 </items>
                             </navigationBar>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIk-gh-boD">
-                                <rect key="frame" x="0.0" y="88" width="0.0" height="44"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="qPq-gI-v1G"/>
                                 </constraints>
@@ -72,10 +72,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkC-Q9-tEF">
                                 <rect key="frame" x="20" y="528" width="54" height="30"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="takeSelfieTapped:" destination="I41-aK-jp6" eventType="touchUpInside" id="tYW-mS-VSz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0A-SK-EIC">
                                 <rect key="frame" x="330" y="528" width="52" height="30"/>
                                 <state key="normal" title="Albums"/>
+                                <connections>
+                                    <action selector="photoLibraryTapped:" destination="I41-aK-jp6" eventType="touchUpInside" id="xEw-rU-bc9"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="NcT-I9-SDz">
                                 <rect key="frame" x="87" y="218" width="240" height="128"/>
@@ -122,6 +128,9 @@
                         <barButtonItem title="Item" id="Dku-ss-Fo8"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="displayImage" destination="NcT-I9-SDz" id="WQg-Je-ML2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWb-Dj-iir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

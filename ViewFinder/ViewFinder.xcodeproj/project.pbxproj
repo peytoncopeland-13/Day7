@@ -13,6 +13,8 @@
 		9C856CC523031AF2004D936B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C856CC323031AF2004D936B /* LaunchScreen.storyboard */; };
 		9C856CD023031AF2004D936B /* ViewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C856CCF23031AF2004D936B /* ViewFinderTests.swift */; };
 		9C856CDB23031AF2004D936B /* ViewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C856CDA23031AF2004D936B /* ViewFinderUITests.swift */; };
+		9C856CE9230326FF004D936B /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C856CE8230326FF004D936B /* AddPhotoViewController.swift */; };
+		9C856CEB23036175004D936B /* PhotoTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C856CEA23036175004D936B /* PhotoTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		9C856CD623031AF2004D936B /* ViewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C856CDA23031AF2004D936B /* ViewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderUITests.swift; sourceTree = "<group>"; };
 		9C856CDC23031AF2004D936B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C856CE8230326FF004D936B /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		9C856CEA23036175004D936B /* PhotoTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		9C856CAB23031AF0004D936B = {
 			isa = PBXGroup;
 			children = (
+				9C856CEA23036175004D936B /* PhotoTableTableViewController.swift */,
 				9C856CB623031AF0004D936B /* ViewFinder */,
 				9C856CCE23031AF2004D936B /* ViewFinderTests */,
 				9C856CD923031AF2004D936B /* ViewFinderUITests */,
@@ -97,6 +102,7 @@
 			children = (
 				9C856CB723031AF0004D936B /* AppDelegate.swift */,
 				9C856CBB23031AF0004D936B /* Main.storyboard */,
+				9C856CE8230326FF004D936B /* AddPhotoViewController.swift */,
 				9C856CC123031AF2004D936B /* Assets.xcassets */,
 				9C856CC323031AF2004D936B /* LaunchScreen.storyboard */,
 				9C856CC623031AF2004D936B /* Info.plist */,
@@ -254,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C856CB823031AF0004D936B /* AppDelegate.swift in Sources */,
+				9C856CE9230326FF004D936B /* AddPhotoViewController.swift in Sources */,
+				9C856CEB23036175004D936B /* PhotoTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
